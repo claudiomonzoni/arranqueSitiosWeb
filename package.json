@@ -11,6 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "simple-icons": "^4.15.0"
+  },
+  "dependencies": {
+    "mm": "^3.2.0",
+    "modulo": "0.0.3"
   }
 }
