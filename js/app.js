@@ -14,7 +14,7 @@ function esCell(x) {
     // const anchor = document.querySelector(".anchor");
     const abierto = false;
 
-    let abrirMenuFull = () => {
+    function abrirMenuFull () {
       this.abierto = !this.abierto;
       console.log(abierto)
       mainNav.classList.remove("menuFullAbierto");
@@ -39,3 +39,27 @@ const faceicono = new Icono("http://facebook.com", "#social", face)
 faceicono.construirIcono()
 const instaIcono = new Icono("http://instagram.com", "#social", insta)
 instaIcono.construirIcono()
+
+//importo el carrusel
+import {slideIndex} from './glide'
+slideIndex()
+
+// importo gsap
+import gsap from 'gsap'
+gsap.from(".logo, ul>li",
+{
+  stagger:0.1,
+  x:400,
+  opacity: 0,
+  duration: 1 //1 segundo
+})
+
+
+// cargar modulos solo por secciones
+// switch (document.location.pathname)
+// {
+//   case '/seccion':
+//   break
+
+//   default:
+// }
